@@ -1,0 +1,30 @@
+[tool.poetry]
+authors = ["Bradley Shawyer <21098019+bradleyess@users.noreply.github.com>"]
+maintainers = []
+description = "A Python starter template. Uses Poetry for dependency and virtualenv management & Docker for virtualization and development."
+name = "python-starter"
+packages = [{include = "python_starter"}]
+readme = "README.md"
+version = "0.1.0"
+keywords = []
+
+[tool.poetry.dependencies]
+python = "^3.10"
+loguru = "^0.6"
+dbt-snowflake = "^1.4.2"
+
+# These dependencies are not installed in production builds.
+sqlfluff = "^2.0.2"
+
+[tool.poetry.group.dev.dependencies]
+sqlfluff = "^2.0.2"
+black = "^23.3.0"
+flake8 = "^6.0.0"
+mypy = "^1.1.1"
+pytest = "^7.1.2"
+pytest-cov = "^3.0"
+ruff = "^0.0.261"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.4.2"]

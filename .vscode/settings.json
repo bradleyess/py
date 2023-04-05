@@ -1,0 +1,36 @@
+{
+    "editor.rulers": [100],
+    "editor.renderWhitespace": "all",
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.indexing": true,
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.suggest.insertMode": "replace"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },
+    "sqlfluff.linter.run": "onSave",
+    "sqlfluff.dialect": "snowflake",
+    "sqlfluff.executablePath": "/app/.venv/bin/sqlfluff",
+    "sqlfluff.experimental.format.executeInTerminal": true,
+    "editor.formatOnSave": false,
+    "files.associations": {
+        // ? You can make this more specific if you have SQL files that are not DBT related.
+        "*.sql": "jinja-sql", // all .sql files
+        // Do not format files in the target directory
+        "**/target/**": ""
+    },
+    "[jinja-sql]": {
+        "editor.defaultFormatter": "dorzey.vscode-sqlfluff"
+    }
+}
