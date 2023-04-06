@@ -10,15 +10,17 @@
     "customizations": {
         "vscode": {
             "extensions": [
-				"ms-python.black-formatter",
-				"ms-python.python",
-				"esbenp.prettier-vscode",
-				"charliermarsh.ruff",
-				"tamasfe.even-better-toml",
-				"GitHub.copilot",
-				"bastienboutonnet.vscode-dbt",
-				"dorzey.vscode-sqlfluff"
-			]
+                "GitHub.copilot", // AI Code Completion
+
+                "ms-python.black-formatter", // Python Code Formatting
+                "ms-python.python", // Python
+                "charliermarsh.ruff", // Python Linting
+
+                "esbenp.prettier-vscode", // Code Formatting for JS, JSON, CSS, YAML.
+                "tamasfe.even-better-toml", // TOML Linting
+                "dorzey.vscode-sqlfluff", // SQL Linting
+                "exiasr.hadolint" // Docker Linting
+            ]
         }
     }
 }
