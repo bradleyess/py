@@ -19,7 +19,8 @@
                 "esbenp.prettier-vscode", // Code Formatting for JS, JSON, CSS, YAML.
                 "tamasfe.even-better-toml", // TOML Linting
                 "dorzey.vscode-sqlfluff", // SQL Linting
-                "exiasr.hadolint" // Docker Linting
+                "exiasr.hadolint", // Docker Linting
+                "DavidAnson.vscode-markdownlint" // Markdown Linting
             ]
         }
     }
