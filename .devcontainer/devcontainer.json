@@ -3,7 +3,7 @@
     "remoteUser": "vscode",
     "build": {
         "context": "..",
-        "dockerfile": "../Dockerfile"
+        "dockerfile": "../dev.Dockerfile"
     },
     "features": {},
 
